@@ -1,74 +1,98 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Expense Tracker is a React-based web application that allows users to manage their expenses efficiently. The application provides features to add, edit, delete expenses, and view summaries with visual charts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Wallet Balance Management**
+   - Default wallet balance set to `$5000`.
+   - Users can add income to increase the wallet balance.
+   - Alerts users when trying to spend more than the available balance.
 
-### `npm start`
+2. **Expense Management**
+   - Add expenses with details like title, amount, category, and date.
+   - Edit or delete existing expenses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Expense Summaries and Trends**
+   - View total expenses categorized using a pie chart.
+   - Analyze spending trends with a bar chart based on categories.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Persistent Data**
+   - All data is stored in `localStorage` to ensure it persists even after page refresh.
 
-### `npm test`
+5. **Responsive Design**
+   - Optimized for different screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend**: React, HTML, CSS, JavaScript
+- **Charting Libraries**: Recharts
+- **UI Enhancements**: react-modal, notistack, react-icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ishwanku/expense-tracker.git
+   cd expense-tracker
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   The application will be available at `http://localhost:3000/`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Build for production:
+   ```bash
+   npm run build
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Add Income**: Use the "Add Income" button to increase your wallet balance.
+2. **Add Expense**: Fill in the expense form with details and click "Add Expense."
+3. **Edit/Delete Expense**: Modify or remove expenses using the respective buttons.
+4. **View Summaries**: Use the charts to analyze expenses by category and trends.
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app can be deployed using [Vercel](https://vercel.com/) or any other hosting platform:
+1. Build the app:
+   ```bash
+   npm run build
+   ```
+2. Deploy using Vercel:
+   ```bash
+   vercel deploy
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Folder Structure
 
-### Code Splitting
+```
+expense-tracker/
+├── src/
+│   ├── components/
+│   │   └── ExpenseTracker.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   └── index.js
+├── .gitignore
+├── package.json
+├── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is open-source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+Feel free to contribute by submitting issues or pull requests!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# expense-tracker
->>>>>>> 00cb83c167e4ca34385ecba1e4b11b3828b3ec90
